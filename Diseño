@@ -34,5 +34,44 @@ public class Parada{
   private List<Viaje> origenes = new ArrayLIst<Viaje>;
   private List<Viaje> destinos = new ArrayLIst<Viaje>;
 
-  public
+
+}
+
+public class Pasajero{
+  private Integer dni;
+  private String nombreyapellido;
+  private List<Reserva> reservas = new ArrayList<Reserva>;
+
+  public Integer getDNI(){}
+  public String getNombreyApellido(){}
+  public Reservas getReservasRealizadas();
+
+
+}
+
+public class AgenciaViaje extends Vendedor{
+  private Integer cuit;
+  private String nombre;
+}
+
+public class Vendedor{
+  private List<Reserva> reservas = new ArrayList<Reserva>;
+  public Reservas getReservasRealizadas();
+}
+
+public class Reserva{
+  private DateTime fechaHoraReserva;
+  private DateTime fechaHoraConfirm;
+  private DateTime fechaHoraCancel;
+  private Integer nroPasaje;
+  private Money montoAbon;
+  private Asiento asiento;
+
+}
+
+public class Asiento{
+  private Integer nro;
+  private Reserva reserva;
+
+  public Boolean getEstado();
 }
