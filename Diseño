@@ -1,0 +1,38 @@
+Public class Empresa  {
+  private List<Parada> paradas = new ArrayList<Parada>;
+  private List<Viaje> viajes = new ArrayList<Parada>;
+  private List<Pasajero> pasajeros = new ArrayList<Pasajero>;
+  private List<Vendedor> vendedores = new ArrayList<Vendedor>;
+
+  public void addViaje(){}
+  public void addPasajero(){}
+  public void addParada(){}
+  public void addVendedor(){}
+}
+
+public class Viaje {
+  private DateTime fechaHoraSalida;
+  private DateTime fechaHoraLlegada;
+  private Money precioBase;
+  private Parada origen;
+  private Parada destino;
+  private List<Asiento> asientos = new ArrayLIst<Asiento>;
+  private List<Reserva> reservas = new ArrayLIst<Reserva>;
+
+  public int getDuracionHs(){}
+  public Parada getOrigen(){}
+  public Parada getDestino(){}
+  public Asiento getAsientosDisp(){}
+}
+
+public class Parada{
+  private String nombre;
+  private String direccion;
+  private String localidad;
+  private String provincia;
+
+  private List<Viaje> origenes = new ArrayLIst<Viaje>;
+  private List<Viaje> destinos = new ArrayLIst<Viaje>;
+
+  public
+}
